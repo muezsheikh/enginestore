@@ -1,0 +1,172 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.cartHeading {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.cartHeading h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1.2px;
+}
+.cart hr {
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+.cartContainer {
+  width: 100%;
+}
+
+.cartContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.cartContainer th,
+.cartContainer td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.cartContainer td {
+  font-size: 1rem;
+}
+
+.cartContainer th {
+  background-color: #f2f2f2;
+}
+
+.cartContainer img {
+  max-width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.cartItemTitle {
+  margin-left: 10px;
+}
+
+.cartQuanNum {
+  margin: 0 5px;
+  font-size: 1rem;
+}
+
+.cartContainer button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cartContainer button:hover {
+  background-color: #ddd;
+}
+
+.subtotalSystem {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px  30px;
+}
+.subtotalHeading {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+}
+.subtotalHeading h3{
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+
+.placeButton{
+  margin-top: 10px;
+}
+.placeButton button {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.continueToShopping i{
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.continueToShopping a{
+  font-size: 1rem;
+}
+
+@media (max-width: 683px) {
+  /* Make the table cells stack on top of each other for better readability on smaller screens */
+  .cartContainer th,
+  .cartContainer td {
+    display: block;
+  }
+
+  .cartContainer th {
+    text-align: left;
+  }
+
+  /* Adjust padding and margin for better spacing on smaller screens */
+  .cartContainer td,
+  .cartContainer th {
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  /* Center align the text inside table cells */
+  .cartContainer td,
+  .cartContainer th {
+    text-align: center;
+  }
+
+  /* Hide table header on smaller screens to save space */
+  .cartContainer thead {
+    display: none;
+  }
+
+  /* Adjust styles for the subtotal heading container */
+  .subtotalHeading {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .subtotalHeading h3 {
+    font-size: 1rem;
+  }
+}
+
+.removeButton:hover{
+  color: red;
+  cursor: pointer;
+
+}
+.emptyContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 120px;
+}
+.emptyContainer h3{
+  font-size: 2rem;
+}
+.emptyContainer button{
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

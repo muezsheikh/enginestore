@@ -1,0 +1,79 @@
+footer {
+  background-color: #141414;
+  color: white;
+  width: 100%;
+  margin: auto;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 3rem;
+}
+
+.brand {
+  width: 75%;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+ footer p {
+  opacity: 0.6;
+  font-size: .8rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
+  font-size: .8rem;
+}
+footer a:hover {
+  opacity: 1;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer input[type='text'] {
+  padding: 8px 10px;
+  background-color: #141414;
+  color: white;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+footer .btn {
+  padding: 9px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+footer .accounts {
+  margin-top: 50px;
+}
+
+footer i {
+  margin-right: 10px;
+  font-size: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+footer i:hover {
+  opacity: 1;
+}
+
+footer hr {
+  opacity: 0.6;
+}
+
+footer p {
+  padding: 1.5rem;
+  text-align: center;
+}

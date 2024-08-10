@@ -1,0 +1,425 @@
+.singleHead {
+  margin-top: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.singleHead a {
+  font-size: 0.7rem;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+.singleProdContainer {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 10px;
+  padding: 10px 150px;
+}
+
+.singleProdContainer .singleProdImg img {
+  width: 100%;
+}
+
+.singleProdContent {
+  padding: 5px 13px;
+}
+
+.singleTitleID {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.singleTitleID h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.singleTitleID p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.singleMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.singlePrice h1 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.singleColor p {
+  font-size: 1rem;
+}
+.singleColor img {
+  margin-top: 5px;
+}
+
+.singleSizesQuantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sizesDiv p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.sizesButtons button {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.activeSize {
+  font-weight: bold;
+}
+
+.quantityButtons p {
+  font-size: 1rem;
+}
+.quantity-box {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  display: flex;
+}
+.quantity-box button {
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.quantityNum {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.size-chart {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 10px;
+  color: #333; /* You can choose your desired text color */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  cursor: pointer;
+  width: 113px;
+}
+.singleButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Assuming you are using Font Awesome for icons. Make sure you include the Font Awesome library. */
+
+.singleButtons button {
+  width: 100%;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.addToCartButton {
+  background-color: #333;
+  color: #fff; /* Your desired text color */
+}
+
+.addToWishlistButton {
+  background-color: #dc3545; /* Your desired background color */
+  color: #fff; /* Your desired text color */
+}
+
+.singleButtons button span {
+  margin-right: 10px;
+}
+
+.singleButtons button i {
+  transition: transform 0.3s ease;
+}
+
+.singleButtons button:hover {
+  transform: scale(1.05); /* Optional: Add a scaling effect on hover */
+}
+
+.singleButtons button:hover i {
+  transform: translateY(
+    -3px
+  ); /* Optional: Add a vertical translation effect on hover for the icons */
+}
+
+/* Optional: Adjust icon size and position */
+.singleButtons button i {
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+}
+
+.singleProdInfo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.singleProdText {
+  font-size: 0.8rem;
+  padding: 10px;
+  letter-spacing: 1.2px;
+  display: none;
+}
+.singleProdText.activeInfo,
+.singleProdText.activeNote {
+  display: block;
+}
+.activeIcon {
+  transform: rotate(180deg);
+}
+.singleDelivery {
+  margin-top: 10px;
+}
+.singleDelivery p {
+  font-size: 1rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #333; /* You can choose your desired text color */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  cursor: pointer;
+}
+.singleDelivery p:hover {
+  color: #111010;
+}
+.sizeChartDiv {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  filter: blur(10%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  /* background-color: red; */
+  filter: brightness(50%);
+}
+
+.sizeChartDiv.activeSizeChart {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sizeChartDiv {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.sizeChartDiv img {
+  width: 100%;
+}
+.sizeCrossIcon {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+.sizeCrossIcon i {
+  font-size: 1.2rem;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sizeCrossIcon i:hover {
+  transform: rotate(180deg);
+}
+
+.deliveryChartDiv {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background-color: white;
+  width: 700px;
+  height: 400px;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.deliveryChartDiv.activeDeliveryChart {
+  transform: translateX(-50%) translateY(0%);
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.1s; /* Optional: Add a slight delay to the transition */
+}
+.deliveryChartDiv {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.deliveryBoxHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.deliveryBoxMiddle h3,
+.deliveryBoxCenter h3 {
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.deliveryBoxMiddle p,
+.deliveryBoxCenter p {
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+
+.deliveryBoxFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.deliveryBoxFooter p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.sideImages {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 3%;
+  gap: 5px;
+  width: 80px;
+}
+.sideImages img {
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+.sideImages img:hover {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.activeImage {
+  border: 1px solid black;
+}
+
+.singleProdImg {
+  position: relative;
+}
+
+.sideImgLeft {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transition: all 0.3s;
+}
+.sideImgRight {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transition: all 0.3s;
+}
+.sideImgLeft i,
+.sideImgRight i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.singleProdImg:hover .sideImgLeft {
+  left: 15px;
+}
+.singleProdImg:hover .sideImgRight {
+  right: 15px;
+}
+
+@media (max-width: 1146px) {
+  .singleProdContainer {
+    padding: 10px 100px;
+    gap: 5px;
+    grid-template-columns: auto 1fr;
+  }
+  .sideImages {
+    left: 30px;
+    width: 60px;
+  }
+  .singleProdImg {
+    width: 400px;
+  }
+  .singleProdImg img {
+    width: 100%;
+  }
+  .sizeChartDiv {
+    width: 550px;
+  }
+  .sizeChartDiv img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 947px) {
+  .singleProdContainer {
+    padding: 10px 30px;
+    gap: 5px;
+    grid-template-columns: auto 1fr;
+  }
+  .singleProdImg {
+    width: 400px;
+  }
+  .sideImages {
+    flex-direction: row;
+    bottom: -170px;
+    z-index: 4;
+    left: 80px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 839px) {
+  .singleProdContainer {
+    grid-template-columns: 1fr;
+  }
+  .singleProdImg {
+    width: auto;
+  }
+  .sideImages {
+    position: static;
+  }
+  .sizeChartDiv {
+    z-index: 4;
+    width: 400px;
+  }
+  .deliveryChartDiv {
+    z-index: 4;
+    width: 400px;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 462px) {
+  .sizeChartDiv {
+    width: 300px;
+  }
+  .deliveryChartDiv {
+    width: 300px;
+  }
+}

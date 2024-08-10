@@ -1,0 +1,129 @@
+/* home head */
+.homeHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.homeLogo img {
+  width: 100px;
+}
+
+/* category home */
+.homeCategoryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.homeCategoryContainer .homeCategory img {
+  width: 100%;
+}
+.homeCategoryContainer .homeCategory {
+  position: relative;
+}
+.homeCategoryContainer .homeCategory .homeCategoryBody {
+  position: absolute;
+  bottom: 13%;
+  left: 50%; /* Updated */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: bottom 0.3s;
+}
+
+.homeCategoryContainer .homeCategory .homeCategoryBody h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.3vw;
+  letter-spacing: 1.2px;
+  text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.homeCategoryContainer .homeCategory .homeCategoryBody button {
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: white;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.homeCategoryContainer .homeCategory:hover .homeCategoryBody {
+  bottom: 15%;
+}
+.homeCategoryContainer .homeCategory:hover .homeCategoryBody button {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.kidsButton:disabled{
+  cursor: not-allowed;
+}
+
+@media (max-width: 862px) {
+  .homeCategoryContainer {
+    grid-template-columns: 1fr;
+  }
+  .homeCategoryContainer .homeCategory .homeCategoryBody h1 {
+    font-size: 3.5vw;
+  }
+  .homeCategoryContainer .homeCategory .homeCategoryBody button {
+    padding: 15px;
+
+    font-size: 2.5vw;
+  }
+}
+
+/* social section home */
+.socialSectionContainer {
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialSection p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: 300;
+}
+
+.socialIconsHome i {
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.socialIconsHome i:hover{
+  transform: scale(1.2);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* footer section */
+.footerSectionContainer{
+  background-color: black;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSectionContainer p{
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1.2px;
+}
+.comingSoon{
+  opacity: .5;
+}
